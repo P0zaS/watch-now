@@ -1,5 +1,6 @@
 
 function login() {
+
     let state = true;
     let user = {
         email: document.getElementById('email').value,
@@ -32,7 +33,7 @@ function login() {
             if (response.status == 200) {
                 response.json().then(data => {
                     localStorage.setItem('token', data)
-                    // window.location.href = '../auth/success/home/home.html'
+                    window.location.href = '../auth/success/home/home.html'
                     deleteErrors();
                 })
             } else {
