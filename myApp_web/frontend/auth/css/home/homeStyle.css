@@ -1,0 +1,107 @@
+@import url('../style.css');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color) !important;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 3;
+    background-color: var(--font-color);
+    box-shadow:
+        0 0 .5em 0 var(--font-color),
+        0 0 1em 0 var(--font-color),
+        0 0 1.5em 0 var(--font-color);
+    ;
+}
+
+.nav>div>ul>li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav>div>ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav>div>ul>li>div {
+    border-radius: 0.1em;
+    width: 5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.nav>div>ul>li>div:hover {
+    width: 10em;
+    background-color: var(--background-color);
+    box-shadow:
+        0 0 1em 0 var(--font-color),
+        0 0 1.5em 0 var(--font-color),
+        0 0 2em 0 var(--font-color);
+    ;
+}
+
+.nav>div>ul>li>div>button,
+.nav>div>ul>li>div>button>i {
+    color: var(--background-color);
+    width: 100%;
+    border: 0;
+    background-color: var(--font-color);
+    display: block;
+    line-height: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav>div>ul>li>div>button:hover,
+.nav>div>ul>li>div>button>i:hover {
+    color: var(--font-color);
+    background-color: var(--background-color);
+
+}
+
+.aside-menu {
+    position: absolute;
+    overflow: none;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    background-color: var(--background-color);
+    box-shadow:
+        0 0 1em 0 var(--font-color),
+        0 0 1.5em 0 var(--font-color),
+        0 0 2em 0 var(--font-color);
+    ;
+
+    transition: 2s all;
+}
+
+.aside-menu-active {
+    width: 15em;
+    height: 100%;
+}
+
+.content-aside-menu {
+    display: none;
+}
+.content-aside-menu-active{
+    display: block;
+    justify-content: flex-start;
+}

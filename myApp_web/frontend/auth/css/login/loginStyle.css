@@ -1,0 +1,7 @@
+@import url('../style.css');
+
+body {
+    background-image: url("../../img/bg/bgLogin3.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
