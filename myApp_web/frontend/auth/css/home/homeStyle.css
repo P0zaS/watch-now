@@ -90,7 +90,7 @@ body {
         0 0 2em 0 var(--font-color);
     ;
 
-    transition: 2s all;
+    transition: .8s all;
 }
 
 .aside-menu-active {
@@ -105,3 +105,34 @@ body {
     display: block;
     justify-content: flex-start;
 }
+
+.aside-menu-header>hr{
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+.aside-menu-tabs>ul{
+    padding: 0;
+    margin: 0;
+}
+.aside-menu-tabs>ul>li{
+    display: flex;
+}
+.aside-menu-tabs>ul>li>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aside-menu-tabs>ul>li>div:hover 
+{
+    background-color: var(--font-color);
+}
+
+.button {
+    color: var(--font-color);
+    width: 100%;
+    border: 0;
+    background-color: var(--background-color);
+    line-height: 3em;
+}
+
