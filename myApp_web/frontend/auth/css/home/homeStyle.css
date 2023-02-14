@@ -123,8 +123,9 @@ body {
     justify-content: center;
 }
 
-.aside-menu-tabs>ul>li>div:hover 
+.aside-menu-tabs>ul>li>div>button:hover
 {
+    color: var(--background-color);
     background-color: var(--font-color);
 }
 
@@ -136,3 +137,6 @@ body {
     line-height: 3em;
 }
 
+.aside-menu-header>button {
+    width: 20%;
+}
