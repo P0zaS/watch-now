@@ -8,7 +8,11 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="../../css/home/homeStyle.css">
+
+    <!-- js files -->
     <script src="../../js/home/home.js"></script>
+    <script src="../../js/security/security.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -25,10 +29,10 @@
     <nav class="nav">
         <div>
             <ul>
-                <li>
+                <li class="itemNav">
                     <div><button><i class="fa-solid fa-house"></i></button></div>
                 </li>
-                <li>
+                <li class="itemNav">
                     <div><button><i class="fa-solid fa-film"></i></button></div>
                 </li>
             </ul>
@@ -36,22 +40,20 @@
         <div>
             <ul>
                 <li>
-                    <div><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+                    <div class="searcher-container">
+                        <button  id="searcherIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="mr-3" id="searcherGroup">
+                            <input class="input-searcher" type="search">
+                        </div>
+                    </div>
                 </li>
 
             </ul>
         </div>
         <div>
             <ul>
-                <li>
+                <li class="itemNav">
                     <div><button onclick="toggleAsideMenu(true)"><i class="fa-solid fa-user"></i></button></div>
-                    <!-- <div><button><i class="fa-solid fa-user"></i></button></div>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><button>Profile</button></li>
-                            <li><button>Log out</button></li>
-                        </ul>
-                    </div> -->
                 </li>
             </ul>
         </div>
@@ -66,7 +68,7 @@
             <div class="aside-menu-tabs">
                 <ul>
                     <li><div><button class="button">Profile</button></div></li>
-                    <li><div><button class="button">Log out <i class="fa-solid fa-right-from-bracket"></i></button></div></li>
+                    <li><div><button onclick="logOut()" class="button">Log out <i class="fa-solid fa-right-from-bracket"></i></button></div></li>
                 </ul>
             </div>
         </div>

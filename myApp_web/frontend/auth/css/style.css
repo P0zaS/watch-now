@@ -1,6 +1,10 @@
 :root {
-    --border-color: #41CCC5;
+    /* --border-color: #41CCC5;
     --font-color: #E01326;
+    --background-color: #151719; */
+
+    --border-color: #E63946;
+    --font-color: #f1faee;
     --background-color: #151719;
 }
 
@@ -26,9 +30,9 @@
     border: 0;
     background-color: var(--background-color);
     box-shadow:
-        0 0 1em .5em var(--font-color),
-        0 0 2em 1em var(--font-color),
-        0 0 3em 1.5em var(--font-color);
+        0 0 1em .5em var(--border-color),
+        0 0 2em 1em var(--border-color),
+        0 0 3em 1.5em var(--border-color);
     display: block;
     justify-content: center;
 }
@@ -58,7 +62,7 @@
 
 
 .input-group-text {
-    background-color: var(--font-color) !important;
+    background-color: var(--border-color) !important;
     border: 0 !important;
 }
 

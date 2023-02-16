@@ -1,4 +1,3 @@
-
 function login() {
     let state = true;
     let user = {
@@ -31,7 +30,7 @@ function login() {
         }).then(response => {
             if (response.status == 200) {
                 response.json().then(data => {
-                    localStorage.setItem('token', data)
+                    setToken(data)
                     window.location.href = '../auth/success/home/home.html'
                     deleteErrors();
                 })
@@ -45,6 +44,7 @@ function login() {
 
 function showError(errMsg) {
     let error_container = document.getElementById('errors');
+    error_container.innerHTML = ''
     let create_error = document.createElement('p');
     create_error.setAttribute('name', 'error')
     error_container.classList.remove('errors');
@@ -68,3 +68,4 @@ function listOfFilms() {
         })
     })
 }
+

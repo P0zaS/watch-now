@@ -35,7 +35,7 @@ body {
 }
 
 
-.nav>div>ul>li>div {
+.itemNav>div {
     border-radius: 0.1em;
     width: 5em;
     text-align: center;
@@ -44,7 +44,7 @@ body {
     transition: .5s ease-in-out;
 }
 
-.nav>div>ul>li>div:hover {
+.itemNav>div:hover {
     width: 10em;
     background-color: var(--background-color);
     box-shadow:
@@ -54,8 +54,8 @@ body {
     ;
 }
 
-.nav>div>ul>li>div>button,
-.nav>div>ul>li>div>button>i {
+.itemNav>div>button,
+.itemNav>div>button>i {
     color: var(--background-color);
     width: 100%;
     border: 0;
@@ -68,11 +68,35 @@ body {
     transition: 0.5s;
 }
 
-.nav>div>ul>li>div>button:hover,
-.nav>div>ul>li>div>button>i:hover {
+.itemNav>div>button:hover,
+.itemNav>div>button>i:hover {
     color: var(--font-color);
     background-color: var(--background-color);
 
+}
+
+.searcher-container{
+    width: 30em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-searcher{
+    height: 10%;
+    width: 20em ;
+    color: var(--background-color);
+    border-radius: 1em;
+    padding: .2em 1em .2em 1em;
+
+    transition: 1s all;
+}
+.input-searcher:not(.input-searcher:focus){
+    width: 10em;
+}
+.unshow{
+    display: none !important;
 }
 
 .aside-menu {
